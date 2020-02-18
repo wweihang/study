@@ -1,0 +1,1 @@
+/root/lin/ka/kaldi/src/bin/show-transitions phones.txt  final.mdl |sed -e '/Transition-id/d' | awk -F " " '{print $5","$11","$14}'> fast.csv
